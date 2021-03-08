@@ -18,6 +18,11 @@ public class CarrinhoTarefas {
         carrinho.pegarBotaoCheckout().click();
     }
 
+    public void continuaCheckout(){
+        carrinho.adicionarMaisProduto().click();
+        carrinho.pegarProximoBotaoCheckout().click();
+    }
+
 }
 
 

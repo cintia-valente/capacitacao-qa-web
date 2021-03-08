@@ -20,6 +20,14 @@ public class PaginaCarrinho {
         return espera.visibilidadeDoElemento(By.xpath("//div[@class='button-container']/a[@class='btn btn-default button button-medium']"));
     }
 
+    public WebElement adicionarMaisProduto(){
+        return espera.visibilidadeDoElemento(By.xpath("//div[@class='cart_quantity_button clearfix']/a[@class='cart_quantity_up btn btn-default button-plus']"));
+    }
+
+    public WebElement pegarProximoBotaoCheckout(){
+        return espera.visibilidadeDoElemento(By.xpath("//p[@class='cart_navigation clearfix']/a[@class='button btn btn-default standard-checkout button-medium']"));
+    }
+
 
 }
 

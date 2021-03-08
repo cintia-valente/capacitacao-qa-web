@@ -10,6 +10,7 @@ import Suporte.TesteBase;
 //import Tarefas.LoginTarefas;
 //import Utilitarios.EsperaFixa;
 //import com.aventstack.extentreports.Status;
+import Tasks.LoginTarefas;
 import Tasks.CarrinhoTarefas;
 import Tasks.StoreTarefas;
 import org.junit.jupiter.api.Test;
@@ -22,6 +23,7 @@ public class RealizarCompraComSucesso extends TesteBase {
     private WebDriver driver = this.pegarDriver();
     StoreTarefas store = new StoreTarefas(driver);
     CarrinhoTarefas carrinho = new CarrinhoTarefas(driver);
+    LoginTarefas cadastro =  new LoginTarefas(driver);
     /*HomeTarefas homePage = new HomeTarefas(driver);
     DetalhaProdutoTarefas produto = new DetalhaProdutoTarefas(driver);
     CarrinhoTarefas carrinho = new CarrinhoTarefas(driver);
@@ -32,6 +34,9 @@ public class RealizarCompraComSucesso extends TesteBase {
 
         store.adicionaProduto();
         carrinho.adicionaCheckout();
+        carrinho.continuaCheckout();
+        cadastro.realizarCadastro();
+        cadastro.continuaCadastro();
     }
 
     /*
@@ -45,7 +50,7 @@ public class RealizarCompraComSucesso extends TesteBase {
         homePage.selecionaProduto();
         produto.adicionaProduto();
         carrinho.realizarChekout();
-    }
+    }*/
 
     @Test
     public void carregaGoogle() throws InterruptedException {
@@ -59,6 +64,6 @@ public class RealizarCompraComSucesso extends TesteBase {
         searchBox.sendKeys("webdriver");
         Thread.sleep(4000);
     }
-*/
+
 
 }
