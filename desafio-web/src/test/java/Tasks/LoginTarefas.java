@@ -18,7 +18,7 @@ public class LoginTarefas {
     }
 
     public void realizarCadastro(){
-        cadastro.pegarInputEmailUsuario().sendKeys("njjuhn@hotmail.com");
+        cadastro.pegarInputEmailUsuario().sendKeys("emailparateste@hotmail.com");
         cadastro.pegarBotaoCadastro().click();
         espera.carregarElemento(cadastro.pegarGeneroUsuario()).click();
         cadastro.pegarInputPrimeiroNomeUsuario().sendKeys("Cíntia");
