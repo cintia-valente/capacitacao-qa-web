@@ -1,56 +1,47 @@
 package TestCase;
 
-//import Suporte.CapturaDeTela;
-//import Suporte.Relatorio;
+import Suporte.Relatorio;
+import Suporte.Screenshot;
 import Suporte.TesteBase;
-//import Suporte.TipoRelatorio;
-//import Tarefas.CarrinhoTarefas;
-//import Tarefas.DetalhaProdutoTarefas;
-//import Tarefas.HomeTarefas;
-//import Tarefas.LoginTarefas;
-//import Utilitarios.EsperaFixa;
-//import com.aventstack.extentreports.Status;
-import Tasks.LoginTarefas;
-import Tasks.CarrinhoTarefas;
-import Tasks.StoreTarefas;
+import Suporte.TipoRelatorio;
+import Tasks.*;
+import com.aventstack.extentreports.Status;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import static Suporte.Relatorio.log;
+
 public class RealizarCompraComSucesso extends TesteBase {
 
     private WebDriver driver = this.pegarDriver();
+
     StoreTarefas store = new StoreTarefas(driver);
     CarrinhoTarefas carrinho = new CarrinhoTarefas(driver);
     LoginTarefas cadastro =  new LoginTarefas(driver);
-    /*HomeTarefas homePage = new HomeTarefas(driver);
-    DetalhaProdutoTarefas produto = new DetalhaProdutoTarefas(driver);
-    CarrinhoTarefas carrinho = new CarrinhoTarefas(driver);
+    EnvioTarefas envio = new EnvioTarefas(driver);
+    PagamentoTarefas pagamento = new PagamentoTarefas(driver);
+    ConfirmaPedidoTarefas pedido = new ConfirmaPedidoTarefas(driver);
 
-*/
     @Test
     public void realizarCompraComSucesso()  {
 
-        store.adicionaProduto();
-        carrinho.adicionaCheckout();
-        carrinho.continuaCheckout();
-        cadastro.realizarCadastro();
-        cadastro.continuaCadastro();
+        try {
+            Relatorio.createTest("Realizar Compra com Sucesso" , TipoRelatorio.INDIVIDUAL);
+
+            store.adicionaProduto();
+            carrinho.adicionaCheckout();
+            carrinho.continuaCheckout();
+            cadastro.realizarCadastro();
+            envio.confirmaEnvio();
+            pagamento.confirmaPagamento();
+            pedido.confirmaPedido();
+
+        }catch (Exception e){
+            log(Status.ERROR, e.getMessage(), Screenshot.fullPageBase64(driver));
+        }
     }
-
-    /*
-    @Test
-    public void realizaCompraComSucesso()  {
-
-        Relatorio.criaTeste("Realizar Compra com Sucesso", TipoRelatorio.SINGLE);
-
-        EsperaFixa.aguardaEmSegundos(2);
-        login.realizarLogin();
-        homePage.selecionaProduto();
-        produto.adicionaProduto();
-        carrinho.realizarChekout();
-    }*/
 
     @Test
     public void carregaGoogle() throws InterruptedException {

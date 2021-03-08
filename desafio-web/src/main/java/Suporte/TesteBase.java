@@ -27,7 +27,7 @@ public class TesteBase extends GerenciadorDriver{
         pegarDriver().get(URL);
     }
 
-   //@AfterEach
+   @AfterEach
     public void encerraDrive(){
 
         //Relatorio.fecha();

@@ -4,6 +4,7 @@ import Utilitarios.Espera;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 public class PaginaLogin {
 
@@ -26,41 +27,39 @@ public class PaginaLogin {
         return driver.findElement(By.id("SubmitCreate"));
     }
 
-/*
     public WebElement pegarGeneroUsuario(){
 
-        return driver.findElement(By.id("id_gender2"));
-        //return espera.visibilidadeDoElemento(By.xpath("//div[@class='radio-inline']/label/div[@id=uniform-id_gender2']/span"));
+        return espera.visibilidadeDoElemento(By.id("uniform-id_gender2"));
     }
 
-*/
     public WebElement pegarInputPrimeiroNomeUsuario() {
-        WebElement inputPrimeiroNomeUsuario = driver.findElement(By.id("customer_firstname"));
-        return inputPrimeiroNomeUsuario;
+
+        return espera.visibilidadeDoElemento(By.id("customer_firstname"));
     }
 
     public WebElement pegarInputUltimoNomeUsuario(){
-        WebElement inputUltimoNomeUsuario = driver.findElement(By.id("customer_lastname"));
-        return inputUltimoNomeUsuario;
+
+        return espera.visibilidadeDoElemento(By.id("customer_lastname"));
     }
 
     public WebElement pegarInputSenhaUsuario(){
-        return espera.visibilidadeDoElemento(By.xpath("//div[@class='required password form-group form-error']/input[@class='is_required validate form-control']"));
+
+        return espera.visibilidadeDoElemento(By.id("passwd"));
     }
 
-    public WebElement pegarDiaNascimentoUsuario(){
-        WebElement inputDiaNascimentoUsuario = driver.findElement(By.cssSelector("div#uniform-days option:nth-of-type(28)"));
-        return inputDiaNascimentoUsuario;
+    public Select pegarDiaNascimentoUsuario(){
+
+        return new Select(driver.findElement(By.id("days")));
     }
 
-    public WebElement pegarMesNascimentoUsuario(){
-        WebElement inputMesNascimentoUsuario = driver.findElement(By.cssSelector("div#uniform-months option:nth-of-type(8)"));
-        return inputMesNascimentoUsuario;
+    public Select pegarMesNascimentoUsuario(){
+
+        return new Select(driver.findElement(By.id("months")));
     }
 
-    public WebElement pegarAnoNascimentoUsuario(){
-        WebElement inputAnoNascimentoUsuario = driver.findElement(By.cssSelector("div#uniform-years option:nth-of-type(1990)"));
-        return inputAnoNascimentoUsuario;
+    public Select pegarAnoNascimentoUsuario(){
+
+        return new Select(driver.findElement(By.id("years")));
     }
 
     public WebElement pegarAceiteOfertas(){
@@ -68,49 +67,40 @@ public class PaginaLogin {
         return driver.findElement(By.id("optin"));
     }
 
-    public WebElement pegarInputPrimeiroNomeParaEndereco(){
-        WebElement inputPrimeiroNomeParaEndereco = driver.findElement(By.id("firstname"));
-        return inputPrimeiroNomeParaEndereco;
-    }
-
-    public WebElement pegarInputUltimoNomeParaEndereco(){
-        WebElement inputUltimoNomeParaEndereco = driver.findElement(By.id("lasttname"));
-        return inputUltimoNomeParaEndereco;
-    }
-
     public WebElement pegarInputEndereco(){
-        WebElement inputEndereco = driver.findElement(By.id("address1"));
-        return inputEndereco;
+
+        return espera.visibilidadeDoElemento(By.id("address1"));
     }
 
     public WebElement pegarInputCidade(){
-        WebElement inputCidade = driver.findElement(By.id("city"));
-        return inputCidade;
+
+        return driver.findElement(By.id("city"));
     }
-/*
-    public WebElement pegarInputEstado(){
-        WebElement inputEstado = driver.findElement(By.cssSelector("div#uniform-id_state option:nth-of-type(32)"));
-        return inputEstado;
-    }*/
+
+    public Select pegarInputEstado(){
+
+        return new Select(driver.findElement(By.id("id_state")));
+    }
 
     public WebElement pegarInputCep(){
-        WebElement inputCep = driver.findElement(By.id("postcode"));
-        return inputCep;
+
+        return driver.findElement(By.id("postcode"));
     }
 
     public WebElement pegarInputCelular(){
-        WebElement inputCelular = driver.findElement(By.id("phone_mobile"));
-        return inputCelular;
+
+        return driver.findElement(By.id("phone_mobile"));
     }
 
     public WebElement pegarInputEmailAlternativo(){
-        WebElement inputEmailAlternativo = driver.findElement(By.id("alias"));
-        return inputEmailAlternativo;
+
+        return driver.findElement(By.id("alias"));
     }
 
     public WebElement pegarBotaoRegistro(){
 
-        return driver.findElement(By.id("submitAccount"));
+        return espera.visibilidadeDoElemento(By.id("submitAccount"));
     }
+
 
 }

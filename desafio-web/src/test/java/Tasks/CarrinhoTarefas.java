@@ -11,7 +11,6 @@ public class CarrinhoTarefas {
     public CarrinhoTarefas(WebDriver driver) {
         this.driver = driver;
         carrinho = new PaginaCarrinho(driver);
-        //selecionaProduto = new PaginaHome(this.driver);
     }
 
     public void adicionaCheckout(){
