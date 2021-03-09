@@ -16,14 +16,9 @@ public class PaginaPagamento {
         espera = new Espera(driver);
     }
 
-    public WebElement pegarMetodoPagamento(){
+    public WebElement pegarMetodoPagamento() {
 
         return espera.visibilidadeDoElemento(By.xpath("//div[@class='col-xs-12 col-md-6']/p[@class='payment_module']/a[@class='bankwire']"));
     }
-
-//    public WebElement pegarTotalDaCompra(){
-//
-//        return espera.visibilidadeDoElemento(By.id("total_price"));
-//    }
 
 }

@@ -2,7 +2,6 @@ package Tasks;
 
 import PageObjects.PaginaConfirmaPedido;
 import Utilitarios.Espera;
-import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 
 public class ConfirmaPedidoTarefas {

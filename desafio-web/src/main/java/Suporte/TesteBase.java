@@ -1,11 +1,9 @@
 package Suporte;
 
-//import Utilitarios.FileOperations;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 
-import java.io.IOException;
 
 public class TesteBase extends GerenciadorDriver{
 
@@ -21,16 +19,13 @@ public class TesteBase extends GerenciadorDriver{
     @BeforeEach
     public void setUp(){
 
-        //pegarDriver().get(URL);
-        //String index = FileOperations.getPropriedades("url").getProperty("url");
-        //configReportExtent();
         pegarDriver().get(URL);
     }
 
    @AfterEach
     public void encerraDrive(){
 
-        //Relatorio.fecha();
+        Relatorio.close();
         encerrarDriver();
     }
 

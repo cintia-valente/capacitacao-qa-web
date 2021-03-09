@@ -9,16 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Espera {
 
-    /*  Existem duas formas de montar os waits */
-
-   /* private WebDriverWait espera;
-    public Esperas(WebDriver driver){
-        espera = new WebDriverWait(driver,20);
-    }
-    public WebElement visibilityOfElement(By by){
-        return espera.until(ExpectedConditions.visibilityOfElementLocated(by));
-    }*/
-
     private WebDriver driver;
 
     public Espera(WebDriver driver) {
