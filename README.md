@@ -1,5 +1,4 @@
-<img src="https://user-images.githubusercontent.com/38113015/110805359-c4c9de00-825f-11eb-991e-25f4c98e1518.png" width="80"> 
-
+<img src="https://user-images.githubusercontent.com/38113015/110805359-c4c9de00-825f-11eb-991e-25f4c98e1518.png" width="100"> 
 # Capacitação QA
 Capacitação QA Testes e Automação da empresa DBServer.
 Desafio de automação de testes desenvolvido para a loja virtual Automation Practice www.automationpractice.com
