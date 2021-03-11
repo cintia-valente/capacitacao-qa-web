@@ -2,7 +2,7 @@
 
 # Capacitação QA
 Capacitação QA Testes e Automação da empresa DBServer.
-Desafio de automação de testes desenvolvido para a loja virtual Automation Practice www.automationpractice.com
+Desafio de automação de testes, desenvolvido para a loja virtual Automation Practice www.automationpractice.com
 
 # Execução
 <ul>
