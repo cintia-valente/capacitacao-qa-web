@@ -11,7 +11,7 @@ Desafio de automação de testes desenvolvido para a loja virtual Automation Pra
 </ul>
 
 # Tecnologia utilizada
-JUNIT
+<li>JUNIT</li>
 
 
 
