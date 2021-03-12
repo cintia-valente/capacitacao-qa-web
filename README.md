@@ -13,7 +13,7 @@ Desafio de automação de testes, desenvolvido para simular uma compra com suces
 
 # Tecnologia utilizada
 <li>JUnit5</li>
-<li>Java<li>
+<li>Java</li>
 <li>Maven</li>
 <li>ExtentReport</li>
 <li>WebDriveManager</li>
