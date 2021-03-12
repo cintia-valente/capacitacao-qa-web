@@ -3,7 +3,7 @@
 # Capacitação QA Testes e Automação 
 Desafio de automação de testes, desenvolvido para simular uma compra no site Automation Practice www.automationpractice.com
 
-# Execução
+## Execução
 <ul>
   <li>Abra um ambiente de desenvolvimento JAVA</li>
   <li>Abra o projeto desafio-web</li>
@@ -11,7 +11,7 @@ Desafio de automação de testes, desenvolvido para simular uma compra no site A
   <li>Execute a classe RealizarCompraComSucesso clicando no botão Run</li>
 </ul>
 
-# Tecnologia utilizada
+## Tecnologias utilizadas
 <li>JUnit5</li>
 <li>Java</li>
 <li>Maven</li>
@@ -19,7 +19,7 @@ Desafio de automação de testes, desenvolvido para simular uma compra no site A
 <li>WebDriveManager</li>
 <li>Intellij</li>
 
-# Relatórios de Teste
+## Relatórios de Teste
 Para visualizar os relórios de teste, após a execução, abra a pasta raiz do projeto e acesse a pasta "Report", abra o aquivo "MeuRelatorio.html".
 
 
