@@ -1,6 +1,6 @@
 <img src="https://user-images.githubusercontent.com/38113015/110805359-c4c9de00-825f-11eb-991e-25f4c98e1518.png" width="100"> 
 
-# Capacitação QA Testes 
+# Capacitação QA Testes e Automação 
 Desafio de automação de testes, desenvolvido para simular uma compra no site Automation Practice www.automationpractice.com
 
 # Execução
