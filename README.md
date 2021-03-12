@@ -20,6 +20,8 @@ Desafio de automação de testes da empresa DBServer, desenvolvido para simular 
 <li>Intellij</li>
 
 ## Relatórios de Teste
-Para visualizar os relórios de teste, após a execução, abra a pasta raiz do projeto e acesse a pasta "Report", abra o aquivo "MeuRelatorio.html".
+Para visualizar os relórios de teste, após a execução:
 
+<li>Abra a pasta raiz do projeto e acesse a pasta "Report"</li>
+<li>"MeuRelatorio.html"</li>
 
