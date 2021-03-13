@@ -17,7 +17,6 @@ Desafio de automação de testes da empresa DBServer, desenvolvido para simular 
 <li>Maven</li>
 <li>ExtentReport</li>
 <li>WebDriveManager</li>
-<li>Intellij</li>
 
 ## Relatórios de Teste
 Para visualizar os relórios de teste, após a execução:
