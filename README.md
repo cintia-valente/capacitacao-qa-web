@@ -1,7 +1,7 @@
 <img src="https://user-images.githubusercontent.com/38113015/110805359-c4c9de00-825f-11eb-991e-25f4c98e1518.png" width="100"> 
 
 # Capacitação QA Testes e Automação WEB
-Desafio de automação de testes da empresa DBServer, realizado para o projeto do Banrisul, desenvolvido para simular uma compra no site Automation Practice www.automationpractice.com.
+Desafio de automação de testes WEB da empresa DBServer, realizado para o projeto do Banrisul, desenvolvido para simular uma compra no site Automation Practice www.automationpractice.com.
 
 ## Execução
 <ul>
